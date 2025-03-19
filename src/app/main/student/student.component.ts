@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalComponent } from '../../common/modal/modal.component';
 import { NotFoundDataComponent } from '../../common/not-found-data/not-found-data.component';
 
 @Component({
