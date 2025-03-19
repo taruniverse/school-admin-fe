@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+.hand {
+    cursor: pointer;
+}
+
+.hs-accordion-content {
+    overflow: hidden; /* Make sure content is hidden when collapsed */
+    padding: 0;
+    transition: height 300ms ease-in-out;
+  }
