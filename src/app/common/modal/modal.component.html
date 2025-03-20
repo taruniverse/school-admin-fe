@@ -1,8 +1,10 @@
 <div
   class="relative z-10"
   aria-labelledby="modal-title"
+  [ngClass]="{'hidden':!modal}"
   role="dialog"
-  aria-modal="true"
+  [attr.aria-modal]="modal ? 'true' : 'false'"
+  [@modalAnimation]
 >
   <!--
       Background backdrop, show/hide based on modal state.
@@ -16,7 +18,7 @@
     -->
   <div
     class="fixed inset-0 bg-gray-500/75 transition-opacity"
-    aria-hidden="true"
+    [attr.aria-hidden]="modal ? 'true' : 'false'"
   ></div>
 
   <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
