@@ -3,10 +3,12 @@ import { NotFoundDataComponent } from '../../common/not-found-data/not-found-dat
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { ModalComponent } from '../../common/modal/modal.component';
 import { CommonModule } from '@angular/common';
+import { CalendarComponent } from '../../common/calendar/calendar.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-student',
-  imports: [CommonModule, NotFoundDataComponent, ModalComponent],
+  imports: [CommonModule, NotFoundDataComponent, RouterModule, ModalComponent],
   templateUrl: './student.component.html',
   styleUrl: './student.component.scss',
   animations: [
