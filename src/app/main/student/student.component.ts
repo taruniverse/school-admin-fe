@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-student',
-  imports: [CommonModule, NotFoundDataComponent, RouterModule, ModalComponent],
+  imports: [CommonModule, NotFoundDataComponent, RouterModule],
   templateUrl: './student.component.html',
   styleUrl: './student.component.scss',
   animations: [

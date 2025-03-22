@@ -4,6 +4,7 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { StudentComponent } from './main/student/student.component';
 import { AddStudentComponent } from './main/add-student/add-student.component';
+import { StudentDetailsComponent } from './main/student-details/student-details.component';
 
 export const routes: Routes = [
   {
@@ -38,9 +39,13 @@ export const routes: Routes = [
         component: StudentComponent,
       },
       {
-        path:'add-student',
-        component:AddStudentComponent
-      }
+        path: 'add-student',
+        component: AddStudentComponent,
+      },
+      {
+        path: 'student-detail/:id',
+        component: StudentDetailsComponent,
+      },
     ],
   },
 ];
